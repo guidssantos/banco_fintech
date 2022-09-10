@@ -14,7 +14,7 @@ export const CaseStudy = () => {
           <Styled.Title>Some results from our clients</Styled.Title>
           <Styled.InfoWrapper>
             <Styled.InfoLeft>
-              <Heading>Coruma Finance</Heading>
+              <Styled.InfoLeftTitle>Coruma Finance</Styled.InfoLeftTitle>
               <TextComponent>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A
                 delectus, adipisci obcaecati ut quidem alias architecto magni.
@@ -27,13 +27,13 @@ export const CaseStudy = () => {
             <img src={phone} />
             <Styled.InfoRight>
               <Styled.InfoRightOne>
-                Accquired 8 long time customers
+                <span>Accquired 8 long time customers</span>
               </Styled.InfoRightOne>
               <Styled.InfoRightOne>
-                300% Growth in first year
+                <span>300% Growth in first year</span>
               </Styled.InfoRightOne>
               <Styled.InfoRightOne>
-                Hired 24 talented developers
+                <span>Hired 24 talented developers</span>
               </Styled.InfoRightOne>
             </Styled.InfoRight>
           </Styled.InfoWrapper>
