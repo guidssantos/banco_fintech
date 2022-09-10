@@ -1,7 +1,7 @@
-import { Heading } from '../Heading';
-import { TextComponent } from '../TextComponent';
-import { SectionBackground } from '../SectionBackground';
-import card from '../../../public/assets/images/credit-card.svg';
+import { Heading } from '../../components/Heading';
+import { TextComponent } from '../../components/TextComponent';
+import { SectionBackground } from '../../components/SectionBackground';
+import card from '../../assets/images/credit-card.svg';
 import * as Styled from './styles';
 
 export const Home = () => {
