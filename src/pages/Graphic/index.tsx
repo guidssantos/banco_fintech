@@ -15,9 +15,7 @@ export const Graphic = () => {
           This mix makes it possible for our team to deliver the best results to
           all our clients.
         </TextComponent>
-        <ImageContainer style={{ width: '50%' }}>
-          <img src={grapich} />
-        </ImageContainer>
+        <img src={grapich} />
       </Styled.Wrapper>
     </SectionContainer>
   );

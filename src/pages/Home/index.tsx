@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <SectionBackground>
       <>
-        <Styled.Wrapper>
+        <Styled.Wrapper id="home">
           <Styled.TextContainer>
             <Heading>Scale Fintech Safe And Secure</Heading>
             <TextComponent>

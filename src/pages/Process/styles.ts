@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 export const Wrapper = styled.div`
 ${({ theme }) => css`
-  padding-top: ${theme.spacings.huge};
+  padding-top: ${theme.spacings.large};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,29 @@ ${({ theme }) => css`
     width: 800px;
     text-align: center;
     padding-bottom: ${theme.spacings.huge};
+    font-weight: 500;
   }
+
+@media ${theme.media.lteMedium} {
+  p{
+    width: 80%;
+    font-size: ${theme.font.sizes.small};
+  }
+
+  h1{
+    width: 100%;
+  }
+}
+
+@media ${theme.media.lteSmall} {
+  h1{
+    font-size: ${theme.font.sizes.medium};
+  }
+
+  p{
+    font-size: calc(${theme.font.sizes.small} - .4rem);
+  }
+}
 `}
 `;
 
@@ -25,6 +47,12 @@ export const Title = styled.h2`
 ${({ theme }) => css`
 font-size: ${theme.font.sizes.medium};
 color: ${theme.colors.white};
+
+@media ${theme.media.lteSmall} {
+  &{
+    font-size: ${theme.font.sizes.small};
+  }
+}
 `}
 `;
 
@@ -33,7 +61,6 @@ ${({ theme }) => css`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
   padding-bottom: ${theme.spacings.huge};
 `}
 `;
@@ -58,7 +85,7 @@ border-radius: 20px;
 svg{
   width: 60px;
   height: 60px;
-  margin-bottom: ${theme.spacings.medium};
+  margin-bottom: ${theme.spacings.small};
 }
 
 

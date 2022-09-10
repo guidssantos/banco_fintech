@@ -23,6 +23,33 @@ ${({ theme }) => css`
   p{
     font-size: ${theme.font.sizes.small};
   }
+
+@media ${theme.media.lteMedium} {
+  &{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1{
+    width: 100%;
+  }
+
+  p{
+    width: 80%;
+  }
+}
+
+@media ${theme.media.lteSmall} {
+  h1{
+    font-size: ${theme.font.sizes.medium};
+  }
+
+  p{
+    font-size: calc(${theme.font.sizes.small} - .4rem);
+  }
+}
 `}`;
 
 export const Button = styled.button`
@@ -82,16 +109,37 @@ export const ImageContainer = styled.div`
 ${({ theme }) => css`
 img {
   width: 100%;
-}`}`;
+}
+
+@media ${theme.media.lteMedium} {
+  img{
+    display: none;
+  }
+}
+`}`;
 
 export const LogoWrapper = styled.div`
 ${({ theme }) => css`
     padding-top: ${theme.spacings.xhuge};
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     svg{
       color: #FFFFFF;
+    }
+
+    @media ${theme.media.lteSmall} {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    svg{
+      margin-bottom: ${theme.spacings.small}
+    }
+
+    svg:last-child{
+      margin-bottom: 0;
     }
 `}
 `;

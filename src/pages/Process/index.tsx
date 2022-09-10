@@ -7,7 +7,6 @@ import { TrendingUp } from '@styled-icons/material-outlined/TrendingUp';
 import { Payments } from '@styled-icons/material-outlined/Payments';
 import * as Styled from './styles';
 
-export type ProcessProps = { title?: string };
 export const Process = () => {
   return (
     <SectionBackground>
