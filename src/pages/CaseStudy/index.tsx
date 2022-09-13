@@ -7,7 +7,7 @@ import * as Styled from './styles';
 
 export const CaseStudy = () => {
   return (
-    <SectionContainer>
+    <SectionContainer style={{ minHeight: '100vh' }}>
       <>
         <Styled.Wrapper>
           <Heading>Case Study</Heading>

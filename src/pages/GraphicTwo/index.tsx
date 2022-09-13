@@ -6,7 +6,7 @@ import * as Styled from './styles';
 
 export const GraphicTwo = () => {
   return (
-    <SectionBackground>
+    <SectionBackground style={{ minHeight: '100vh' }}>
       <Styled.Wrapper>
         <Heading>Coruma Finance</Heading>
         <TextComponent>

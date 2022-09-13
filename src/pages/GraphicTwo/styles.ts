@@ -27,6 +27,9 @@ ${({ theme }) => css`
   p{
     width: 80%;
   }
+  img{
+    width: 100%;
+  }
 }
 
 @media ${theme.media.lteSmall} {

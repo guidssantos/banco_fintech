@@ -9,7 +9,7 @@ import * as Styled from './styles';
 
 export const Process = () => {
   return (
-    <SectionBackground>
+    <SectionBackground style={{ minHeight: '100vh' }}>
       <>
         <Styled.Wrapper>
           <Heading>Delivering value in every step of production</Heading>

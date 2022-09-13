@@ -32,6 +32,10 @@ padding-top: ${theme.spacings.small};
     width: 80%;
     font-size: ${theme.font.sizes.small};
   }
+
+  img{
+    width: 100%;
+  }
 }
 
 @media ${theme.media.lteSmall} {
@@ -41,10 +45,6 @@ padding-top: ${theme.spacings.small};
 
   p{
     font-size: calc(${theme.font.sizes.small} - .4rem);
-  }
-
-  img{
-    width: 100%;
   }
 }
 

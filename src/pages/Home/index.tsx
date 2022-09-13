@@ -3,11 +3,13 @@ import { TextComponent } from '../../components/TextComponent';
 import { SectionBackground } from '../../components/SectionBackground';
 import card from '../../assets/images/credit-card.svg';
 import * as Styled from './styles';
+import Navbar from '../../components/Navbar/Navbar';
 
 export const Home = () => {
   return (
     <SectionBackground>
       <>
+        <Navbar />
         <Styled.Wrapper id="home">
           <Styled.TextContainer>
             <Heading>Scale Fintech Safe And Secure</Heading>

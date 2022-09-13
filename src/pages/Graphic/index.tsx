@@ -7,7 +7,7 @@ import { SectionContainer } from '../../components/SectionContainer';
 
 export const Graphic = () => {
   return (
-    <SectionContainer>
+    <SectionContainer style={{ minHeight: '100vh' }}>
       <Styled.Wrapper>
         <Heading>Consulting For Startups in Fintech</Heading>
         <TextComponent>
