@@ -30,11 +30,12 @@ svg{
   left: 0;
   width: 50%;
   height: 80%;
-  animation: moving 5s ease infinite;
+  animation: moving 10s ease infinite;
 
   @keyframes moving {
     0% {
 		width: 50%;
+
 	}
 	50% {
 		width: 90%;
