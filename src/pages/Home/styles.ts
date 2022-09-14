@@ -68,6 +68,7 @@ ${({ theme }) => css`
     letter-spacing: 0.05em;
     background: linear-gradient(to right, #9E59FF, #423EE0);
     overflow: hidden;
+    z-index: 2;
 
     &::before,
     &::after{
@@ -135,6 +136,7 @@ ${({ theme }) => css`
     }
 
     svg{
+      position: relative;
       margin-bottom: ${theme.spacings.small}
     }
 

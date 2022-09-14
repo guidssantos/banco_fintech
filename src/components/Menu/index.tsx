@@ -14,9 +14,7 @@ export const Menu = ({ toggle }: MenuProps) => {
         </Styled.MobileIcon>
         <Styled.MenuHeader>
           <Styled.MenuOne>
-            <Styled.Login className="nav-link" href="#about_me">
-              Login
-            </Styled.Login>
+            <Styled.Login href="#">Login</Styled.Login>
           </Styled.MenuOne>
         </Styled.MenuHeader>
       </Styled.ContainerHeader>

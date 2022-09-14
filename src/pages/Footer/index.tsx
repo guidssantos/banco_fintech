@@ -8,18 +8,18 @@ export const Footer = () => {
   return (
     <Styled.Wrapper>
       <Styled.SocialWrapper>
-        <a href="#home">
+        <a href="#">
           <Facebook />
         </a>
-        <a href="#home">
+        <a href="#">
           <InstagramWithCircle />
         </a>
-        <a href="#home">
+        <a href="#">
           <TwitterWithCircle />
         </a>
       </Styled.SocialWrapper>
       <Styled.PagesWrapper>
-        <a href="#home">Home</a>
+        <a href="#">Home</a>
       </Styled.PagesWrapper>
       <Styled.Copyright>
         <Copyright />

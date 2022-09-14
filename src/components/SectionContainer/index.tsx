@@ -10,5 +10,5 @@ export const SectionContainer = ({
   children,
   style,
 }: SectionContainerProps) => {
-  return <Styled.Wrapper style={style}>{children}</Styled.Wrapper>;
+  return <Styled.Wrapper style={style}>{children} </Styled.Wrapper>;
 };

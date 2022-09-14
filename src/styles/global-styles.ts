@@ -36,6 +36,7 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.colors.white};
     text-decoration: none;
+    cursor: pointer;
   }
 
   .table {

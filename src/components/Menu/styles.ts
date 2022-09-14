@@ -18,6 +18,7 @@ export const Login = styled.a`
   padding: 10px 40px;
   background: ${theme.colors.primary};
   border-radius: 5px;
+  cursor: pointer;
   `}
 `;
 
