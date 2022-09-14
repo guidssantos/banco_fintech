@@ -9,16 +9,16 @@ const Sidebar = ({ isOpen, toggle }: Styled.SidebarProps) => {
       </Styled.Icon>
       <Styled.SidebarWrapper>
         <Styled.SidebarMenu>
-          <Styled.SidebarLink onClick={toggle} href="#about_me">
+          <Styled.SidebarLink onClick={toggle} href="#">
             Abra sua conta
           </Styled.SidebarLink>
-          <Styled.SidebarLink onClick={toggle} href="#skills">
+          <Styled.SidebarLink onClick={toggle} href="#">
             Cartão de credito
           </Styled.SidebarLink>
-          <Styled.SidebarLink onClick={toggle} href="#projects">
+          <Styled.SidebarLink onClick={toggle} href="#">
             Empréstimo
           </Styled.SidebarLink>
-          <Styled.SidebarLink onClick={toggle} href="#contact">
+          <Styled.SidebarLink onClick={toggle} href="#">
             Login
           </Styled.SidebarLink>
         </Styled.SidebarMenu>
