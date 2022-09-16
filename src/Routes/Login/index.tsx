@@ -1,5 +1,6 @@
 import * as Styled from './styles';
 import logo from '../../assets/images/E-Finance.svg';
+import { Link } from 'react-router-dom';
 
 export type LoginProps = { value?: string };
 export const Login = ({ value }: LoginProps) => {
@@ -29,6 +30,7 @@ export const Login = ({ value }: LoginProps) => {
             <a>Forgot Password</a>
           </Styled.WrapperCheck>
           <Styled.InputButton type="submit" name="Login" value="LOGIN" />
+          <Link to="dashboard">teste</Link>
         </Styled.FormWrapper>
       </Styled.Wrapper>
     </Styled.Background>
