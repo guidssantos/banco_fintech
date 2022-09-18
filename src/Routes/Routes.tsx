@@ -1,18 +1,15 @@
-import { Home } from 'pages/Home';
-import { render } from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Dashboard } from './Dashboard';
 import { Login } from './Login';
+import Base from '../pages/Base';
 // import your route components too
 
-render(
-  <BrowserRouter>
+export default function AllRoutes() {
+  return (
     <Routes>
-      <Route path="/" element={<Home />}>
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Route>
+      <Route path="/" element={<Base />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/login/dashboard" element={<Dashboard />} />
     </Routes>
-  </BrowserRouter>,
-  document.getElementById('root'),
-);
+  );
+}
