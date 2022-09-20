@@ -13,15 +13,6 @@ export const ContainerHeader = styled.div`
 export const AnimBorder = styled.a`
 `;
 
-export const Login = styled.a`
-  ${({ theme }) => css`
-  padding: 10px 40px;
-  background: ${theme.colors.primary};
-  border-radius: 5px;
-  cursor: pointer;
-  `}
-`;
-
 export const MenuHeader = styled.div`
     display: inline-flex;
 
@@ -35,7 +26,28 @@ export const MenuHeader = styled.div`
 
 `;
 
-export const MenuOne = styled.li``;
+export const MenuOne = styled.li`
+ ${({ theme }) => css`
+
+ a{
+  padding: 10px 40px;
+  background: ${theme.colors.primary};
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ transition: all ease-in-out 300ms;
+
+ &:hover{
+  transform: scale(110%);
+ }
+
+ &:active{
+  transform: scale(95%);
+ }
+
+ `}
+`;
 
 export const Logo = styled.div`
 ${({ theme }) => css`

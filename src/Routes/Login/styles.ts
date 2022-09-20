@@ -65,7 +65,7 @@ ${({ theme }) => css`
 `}
 `;
 
-export const InputButton = styled.input`
+export const InputButton = styled.button`
 ${({ theme }) => css`
   padding: ${theme.spacings.small};
   background: ${theme.colors.secondary};

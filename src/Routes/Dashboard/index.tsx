@@ -1,9 +1,12 @@
-import { DashboardProps } from 'components/Heading/styles';
+import { AuthContext } from '../../contexts/auth';
+import { useContext } from 'react';
 import { Heading } from '../../components/Heading';
 import { SectionContainer } from '../../components/SectionContainer';
 import * as Styled from './styles';
 
 export const Dashboard = () => {
+  const { logout } = useContext(AuthContext);
+
   return (
     <SectionContainer>
       <Styled.Wrapper>
@@ -34,6 +37,7 @@ export const Dashboard = () => {
             </Styled.TitleWrapper>
           </Styled.CardWrapper>
         </div>
+        <button onClick={() => logout()}>teste</button>
       </Styled.Wrapper>
     </SectionContainer>
   );

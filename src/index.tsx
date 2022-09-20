@@ -5,14 +5,17 @@ import { theme } from './styles/theme';
 import { GlobalStyles } from './styles/global-styles';
 import { BrowserRouter } from 'react-router-dom';
 import AllRoutes from './Routes/Routes';
+import AuthProvider from './contexts/auth';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <BrowserRouter>
-        <AllRoutes />
-      </BrowserRouter>
-    </ThemeProvider>
+    <AuthProvider>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <BrowserRouter>
+          <AllRoutes />
+        </BrowserRouter>
+      </ThemeProvider>
+    </AuthProvider>
   </React.StrictMode>,
 );

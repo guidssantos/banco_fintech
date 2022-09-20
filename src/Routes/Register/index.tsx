@@ -4,17 +4,18 @@ import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../contexts/auth';
 
-export const Login = () => {
+export const Register = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const { login, loadingAuth } = useContext(AuthContext);
+  const { register, loadingAuth } = useContext(AuthContext);
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (email !== '' && password !== '') {
-      login(email, password);
+    if (email !== '' && password !== '' && name !== '') {
+      register(email, password, name);
     }
   }
 
@@ -23,7 +24,14 @@ export const Login = () => {
       <Styled.Wrapper>
         <Styled.FormWrapper onSubmit={handleSubmit}>
           <img src={logo} />
-          <Styled.LabelOne>FAÇA SEU LOGIN</Styled.LabelOne>
+          <Styled.LabelOne>FAÇA SEU REGISTRO</Styled.LabelOne>
+          <Styled.InputOne
+            type="text"
+            name="e-mail"
+            placeholder="Digite seu Nome"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
           <Styled.InputOne
             type="text"
             name="e-mail"
@@ -46,9 +54,9 @@ export const Login = () => {
             <a>Forgot Password</a>
           </Styled.WrapperCheck>
           <Styled.InputButton type="submit">
-            {loadingAuth ? 'Carregando...' : 'Acessar'}
+            {loadingAuth ? 'Carregando...' : 'Cadastrar'}
           </Styled.InputButton>
-          <Link to="dashboard">teste</Link>
+          <Link to="/login">Já tem uma conta?</Link>
         </Styled.FormWrapper>
       </Styled.Wrapper>
     </Styled.Background>
