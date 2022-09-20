@@ -48,7 +48,7 @@ export const Login = () => {
           <Styled.InputButton type="submit">
             {loadingAuth ? 'Carregando...' : 'Acessar'}
           </Styled.InputButton>
-          <Link to="dashboard">teste</Link>
+          <Link to="register">teste</Link>
         </Styled.FormWrapper>
       </Styled.Wrapper>
     </Styled.Background>
