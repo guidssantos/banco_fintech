@@ -39,16 +39,11 @@ export const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Styled.WrapperCheck>
-            <span>
-              <input type="checkbox" />
-              Remember me
-            </span>
-            <a>Forgot Password</a>
+            <Link to="/register">Registrar</Link>
           </Styled.WrapperCheck>
           <Styled.InputButton type="submit">
             {loadingAuth ? 'Carregando...' : 'Acessar'}
           </Styled.InputButton>
-          <Link to="/register">teste</Link>
         </Styled.FormWrapper>
       </Styled.Wrapper>
     </Styled.Background>
