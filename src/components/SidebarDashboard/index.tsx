@@ -3,7 +3,6 @@ import { AuthContext } from '../../contexts/auth';
 import { Container, Content, ClosedSideBar, OpenSideBar } from './styles';
 
 import {
-  IoNotificationsSharp,
   MdSettings,
   BsArrowRight,
   BsArrowLeft,
@@ -12,7 +11,7 @@ import {
 } from 'react-icons/all';
 
 import logoImg from '../../assets/images/E-Finance.svg';
-import userImg from '../../assets/images/E-Finance.svg';
+// import userImg from '../../assets/images/E-Finance.svg';
 
 export function SidebarDashboard() {
   const [sideBar, setSideBar] = useState(false);

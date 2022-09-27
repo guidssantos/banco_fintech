@@ -41,6 +41,7 @@ display: flex;
 export const FinanceWrapper = styled.div`
 ${({ theme }) => css`
   display: flex;
+  flex-wrap: wrap;
   padding-top: ${theme.spacings.huge};
 `}
 `;

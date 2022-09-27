@@ -122,6 +122,8 @@ export const ClosedSideBar = styled.header`
 		}
 }
 
+
+
 	/* Icones que pode não ser tão principais no app */
 	div {
 		display: flex;
@@ -174,7 +176,24 @@ export const ClosedSideBar = styled.header`
 				border-radius: 50%;
 			}
 		}
-	`}
+
+
+	}
+  @media ${theme.media.lteSmall}{
+      max-width: 20px;
+
+      img, svg{
+        display: none;
+      }
+
+      button > svg{
+        display: block;
+      }
+
+      nav > button{
+        padding: 8px 30px;
+      }
+    `}
 `;
 
 export const OpenSideBar = styled.header`
