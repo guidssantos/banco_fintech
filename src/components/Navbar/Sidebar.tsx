@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import * as Styled from './styles';
 
 const Sidebar = ({ isOpen, toggle }: Styled.SidebarProps) => {
@@ -18,9 +19,9 @@ const Sidebar = ({ isOpen, toggle }: Styled.SidebarProps) => {
           <Styled.SidebarLink onClick={toggle} href="#">
             Empréstimo
           </Styled.SidebarLink>
-          <Styled.SidebarLink onClick={toggle} href="#">
+          <Link onClick={toggle} to="/login">
             Login
-          </Styled.SidebarLink>
+          </Link>
         </Styled.SidebarMenu>
       </Styled.SidebarWrapper>
     </Styled.SidebarContainer>
