@@ -11,6 +11,9 @@ export const ContainerHeader = styled.div`
 `;
 
 export const AnimBorder = styled.a`
+&:hover{
+  color: white;
+}
 `;
 
 export const MenuHeader = styled.div`
@@ -30,8 +33,9 @@ export const MenuOne = styled.li`
  ${({ theme }) => css`
 
  a{
-  padding: 10px 40px;
+  padding: 10px 50px;
   background: ${theme.colors.primary};
+  color: white;
   border-radius: 5px;
   cursor: pointer;
  }
@@ -39,7 +43,7 @@ export const MenuOne = styled.li`
  transition: all ease-in-out 300ms;
 
  &:hover{
-  transform: scale(110%);
+  transform: scale(105%);
  }
 
  &:active{

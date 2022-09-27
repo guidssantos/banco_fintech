@@ -18,21 +18,24 @@ ${({ theme }) => css`
 		background-position: 0% 50%;
 	}
 }
+
+
 `}
 `;
 
 export const Wrapper = styled.div`
 ${({ theme }) => css`
+padding-top: ${theme.spacings.large};
   h1{
     font-size: 20px;
   }
+`}
+`;
 
-  div{
-    display: flex;
+export const SectionFinance = styled.section`
+display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-`}
 `;
 
 export const FinanceWrapper = styled.div`
@@ -88,8 +91,13 @@ img {
 `}
 `;
 
-export const TitleWrapper = styled.div`
+export const SectionTransaction = styled.section`
+justify-content: f;
+`;
+
+export const TitleWrapper = styled.h1`
 ${({ theme }) => css`
+padding-bottom: ${theme.spacings.large};
 `}
 `;
 
@@ -101,6 +109,5 @@ flex-direction: column;
 `;
 
 export const NamesWrapper = styled.div`
-
 display: flex;
 `;

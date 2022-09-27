@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@restart/ui": "^1.4.0",
     "@styled-icons/boxicons-logos": "^10.46.0",
     "@styled-icons/entypo-social": "^10.46.0",
     "@styled-icons/material-outlined": "^10.34.0",
@@ -16,6 +17,7 @@
     "firebase": "^9.9.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
+    "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0",
     "styled-components": "^5.3.5"

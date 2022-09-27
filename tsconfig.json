@@ -16,6 +16,6 @@
     "jsx": "preserve",
     "baseUrl": "src"
   },
-  "include": [ "**/*.ts", "**/*.tsx"],
+  "include": [ "**/*.ts", "**/*.tsx", "src/components/SidebarDashboard/styles.sass"],
   "exclude": ["node_modules"]
 }

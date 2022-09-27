@@ -5,16 +5,19 @@ import { SectionContainer } from '../../components/SectionContainer';
 import * as Styled from './styles';
 import Button from 'react-bootstrap/Button';
 import cartao from '../../assets/images/cartao.svg';
+import { SidebarDashboard } from '../../components/SidebarDashboard';
 
 export const Dashboard = () => {
   const { logout } = useContext(AuthContext);
 
   return (
     <Styled.Background>
+      <SidebarDashboard />
       <SectionContainer>
         <Styled.Wrapper>
           <Heading>Dashboard</Heading>
-          <div>
+
+          <Styled.SectionFinance>
             <Styled.FinanceWrapper>
               <Styled.FinanceOne>
                 <Styled.FinanceInfo>R$: 2,000</Styled.FinanceInfo>
@@ -44,8 +47,8 @@ export const Dashboard = () => {
                 <img className="mt-3" src={cartao} />
               </Styled.ImgBackground>
             </Styled.CardWrapper>
-          </div>
-          <div>
+          </Styled.SectionFinance>
+          <Styled.SectionTransaction>
             <Styled.TransactionWrapper>
               <Styled.TitleWrapper>Transaction History</Styled.TitleWrapper>
               <Styled.NamesWrapper>
@@ -55,7 +58,7 @@ export const Dashboard = () => {
                 <span>Amount</span>
               </Styled.NamesWrapper>
             </Styled.TransactionWrapper>
-          </div>
+          </Styled.SectionTransaction>
           <Button onClick={() => logout()}>teste</Button>
         </Styled.Wrapper>
       </SectionContainer>
