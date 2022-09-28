@@ -101,7 +101,7 @@ ${({ theme }) => css`
 margin-top: 10rem;
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items: flex-start;
 `}
 `;
 
