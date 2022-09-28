@@ -1,16 +1,19 @@
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../contexts/auth';
 import { Container, Content, ClosedSideBar, OpenSideBar } from './styles';
-
+import { House } from '@styled-icons/bootstrap/House';
+import { Cash } from '@styled-icons/bootstrap/Cash';
+import { CreditCard } from '@styled-icons/bootstrap/CreditCard';
+import { Wallet2 } from '@styled-icons/bootstrap/Wallet2';
 import {
   MdSettings,
   BsArrowRight,
   BsArrowLeft,
-  DiReact,
   RiLogoutCircleRLine,
 } from 'react-icons/all';
 
 import logoImg from '../../assets/images/E-Finance.svg';
+import { Link } from 'react-router-dom';
 // import userImg from '../../assets/images/E-Finance.svg';
 
 export function SidebarDashboard() {
@@ -35,18 +38,18 @@ export function SidebarDashboard() {
 
               {/* Links principais do app */}
               <ul>
-                <a href="/" title="Dashboard">
-                  <DiReact />
-                </a>
-                <a href="/" title="Transaction">
-                  <DiReact />
-                </a>
-                <a href="/" title="Payment">
-                  <DiReact />
-                </a>
-                <a href="/" title="Card">
-                  <DiReact />
-                </a>
+                <Link to="" title="Dashboard">
+                  <House />
+                </Link>
+                <Link to="" title="Transaction">
+                  <Wallet2 />
+                </Link>
+                <Link to="" title="Payment">
+                  <Cash />
+                </Link>
+                <Link to="" title="Card">
+                  <CreditCard />
+                </Link>
               </ul>
             </nav>
             <div>
@@ -55,10 +58,10 @@ export function SidebarDashboard() {
                 {/* <a href="/" title="Notificações">
                   <IoNotificationsSharp />
                 </a> */}
-                <a href="/" title="Configurações">
+                <Link to="" title="Configuration">
                   <MdSettings />
-                </a>
-                <a onClick={() => logout()} title="Sair da conta">
+                </Link>
+                <a onClick={() => logout()} title="Logout">
                   <RiLogoutCircleRLine />
                 </a>
               </ul>
@@ -74,28 +77,28 @@ export function SidebarDashboard() {
                   </button>
                 </span>
                 <div>
-                  <img src={logoImg} alt="Eu" />
+                  <img src={logoImg} alt="User" />
                   <h1>E-Finance</h1>
                 </div>
 
                 {/* Icones principais do app */}
                 <ul>
-                  <a href="/" title="Dashboard">
-                    <DiReact />
+                  <Link to="" title="Dashboard">
+                    <House />
                     <p>Dashboard</p>
-                  </a>
-                  <a href="/" title="Transaction">
-                    <DiReact />
+                  </Link>
+                  <Link to="" title="Transaction">
+                    <Wallet2 />
                     <p>Transaction</p>
-                  </a>
-                  <a href="/" title="Payment">
-                    <DiReact />
+                  </Link>
+                  <Link to="" title="Payment">
+                    <Cash />
                     <p>Payment</p>
-                  </a>
-                  <a href="/" title="Card">
-                    <DiReact />
+                  </Link>
+                  <Link to="" title="Card">
+                    <CreditCard />
                     <p>Card</p>
-                  </a>
+                  </Link>
                 </ul>
               </nav>
               <div>
@@ -105,13 +108,13 @@ export function SidebarDashboard() {
                     <IoNotificationsSharp />
                     <p>Notificações</p>
                   </a> */}
-                  <a href="/">
+                  <Link to="">
                     <MdSettings />
-                    <p>Configurações</p>
-                  </a>
+                    <p>Configuration</p>
+                  </Link>
                   <a onClick={() => logout()}>
                     <RiLogoutCircleRLine />
-                    <p> Sair da conta </p>
+                    <p> Logout </p>
                   </a>
                 </ul>
 

@@ -6,6 +6,9 @@ ${({ theme }) => css`
 	background: linear-gradient(-45deg, #121139, #1c1554, #22052d, #1c1554);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
+  h1{
+    font-weight: 800;
+  }
 
 @keyframes gradient {
 	0% {
@@ -33,9 +36,10 @@ padding-top: ${theme.spacings.large};
 `;
 
 export const SectionFinance = styled.section`
-display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const FinanceWrapper = styled.div`
@@ -93,22 +97,93 @@ img {
 `;
 
 export const SectionTransaction = styled.section`
-justify-content: f;
+${({ theme }) => css`
+margin-top: 10rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+`}
 `;
 
-export const TitleWrapper = styled.h1`
+export const TitleWrapper = styled.div`
 ${({ theme }) => css`
 padding-bottom: ${theme.spacings.large};
+display: flex;
+justify-content: space-between;
 `}
 `;
 
 export const TransactionWrapper = styled.article`
 ${({ theme }) => css`
-display: flex;
-flex-direction: column;
+flex-wrap: wrap;
+border-radius: 10px;
+width: 70%;
 `}
 `;
 
-export const NamesWrapper = styled.div`
+export const NamesWrapper = styled.table`
+${({ theme }) => css`
+color: white;
+margin-top: ${theme.spacings.medium};
+
+`}
+`;
+
+export const TransactionThead = styled.thead`
+
+`;
+
+export const TransactionTr = styled.tr`
+
+
+`;
+
+export const TransactionTh = styled.th`
+border: 0;
+
+`;
+
+export const TransactionTbody = styled.tbody`
+border: 0;
+
+
+
+`;
+export const TransactionTd = styled.td`
+border: 0;
+
+
+`;
+
+export const QuickTransaction = styled.article`
+display: flex;
+justify-content: center;
+width: 26%;
+flex-direction: column;
+align-items: center;
+`;
+
+export const PersonQuickTransaction = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 2rem;
+color: white;
+
+&:last-child{
+  margin-right: 0;
+}
+
+svg{
+  width: 50px;
+  height: 50px;
+}
+
+p{
+  margin: 0;
+}
+`;
+
+export const WrapperPersonQuickTransaction = styled.div`
 display: flex;
 `;

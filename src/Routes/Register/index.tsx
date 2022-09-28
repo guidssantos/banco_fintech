@@ -47,16 +47,11 @@ export const Register = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Styled.WrapperCheck>
-            <span>
-              <input type="checkbox" />
-              Remember me
-            </span>
-            <a>Forgot Password</a>
+            <Link to="/login">Já tem uma conta?</Link>
           </Styled.WrapperCheck>
           <Styled.InputButton type="submit">
             {loadingAuth ? 'Carregando...' : 'Cadastrar'}
           </Styled.InputButton>
-          <Link to="/login">Já tem uma conta?</Link>
         </Styled.FormWrapper>
       </Styled.Wrapper>
     </Styled.Background>

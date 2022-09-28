@@ -179,7 +179,7 @@ export const ClosedSideBar = styled.header`
 
 
 	}
-  @media ${theme.media.lteSmall}{
+  @media ${theme.media.lteMedium}{
       max-width: 20px;
 
       img, svg{
