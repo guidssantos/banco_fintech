@@ -5,6 +5,10 @@ import Button from 'react-bootstrap/Button';
 import cartao from '../../assets/images/cartao.svg';
 import { SidebarDashboard } from '../../components/SidebarDashboard';
 import { DiReact } from 'react-icons/all';
+import person1 from '../../assets/images/person1.jfif';
+import person2 from '../../assets/images/person2.jfif';
+import person3 from '../../assets/images/person3.jfif';
+import person4 from '../../assets/images/person4.jfif';
 
 export const Dashboard = () => {
   return (
@@ -97,22 +101,31 @@ export const Dashboard = () => {
               </Styled.TitleWrapper>
               <Styled.WrapperPersonQuickTransaction>
                 <Styled.PersonQuickTransaction>
-                  <DiReact />
-                  <p>teste</p>
+                  <img src={person1} />
+                  <p>Juliana Freitas</p>
                 </Styled.PersonQuickTransaction>
                 <Styled.PersonQuickTransaction>
-                  <DiReact />
-                  <p>teste</p>
+                  <img src={person2} />
+                  <p>Brian Oliveira</p>
                 </Styled.PersonQuickTransaction>
                 <Styled.PersonQuickTransaction>
-                  <DiReact />
-                  <p>teste</p>
+                  <img src={person3} />
+                  <p>Carolina Almeida</p>
                 </Styled.PersonQuickTransaction>
                 <Styled.PersonQuickTransaction>
-                  <DiReact />
-                  <p>teste</p>
+                  <img src={person4} />
+                  <p>Antonio José</p>
                 </Styled.PersonQuickTransaction>
               </Styled.WrapperPersonQuickTransaction>
+              <Styled.InputWrapper>
+                <input
+                  type="number"
+                  min="1"
+                  step="0.01"
+                  placeholder="R$ Amount"
+                />
+                <Button>Send</Button>
+              </Styled.InputWrapper>
             </Styled.QuickTransaction>
           </Styled.SectionTransaction>
         </Styled.Wrapper>
