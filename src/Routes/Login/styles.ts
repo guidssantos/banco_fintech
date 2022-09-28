@@ -62,6 +62,10 @@ ${({ theme }) => css`
   border-radius: 5px;
   border: 0;
   outline: none;
+
+  @media ${theme.media.lteSmall}{
+    width: 90%;
+  }
 `}
 `;
 
@@ -76,7 +80,7 @@ ${({ theme }) => css`
   color: white;
   cursor: pointer;
 
-  @media ${theme.media.lteSmall}{
+  @media ${theme.media.lteMedium}{
   padding: ${theme.spacings.small} 80px;
   display: flex;
   justify-content: center;
@@ -123,6 +127,7 @@ padding-bottom: 50px;
   span:first-child{
     margin-right: 0;
   }
+
 }
 `}
 `;
