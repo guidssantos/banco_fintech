@@ -25,6 +25,10 @@ export const Register = () => {
         <Styled.FormWrapper onSubmit={handleSubmit}>
           <img src={logo} />
           <Styled.LabelOne>FAÇA SEU REGISTRO</Styled.LabelOne>
+          <Styled.LoginWrapper>
+            <span>Já é um membro? </span>
+            <Link to="/login">Ir para login</Link>
+          </Styled.LoginWrapper>
           <Styled.InputOne
             type="text"
             name="e-mail"
@@ -46,9 +50,6 @@ export const Register = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Styled.WrapperCheck>
-            <Link to="/login">Já tem uma conta?</Link>
-          </Styled.WrapperCheck>
           <Styled.InputButton type="submit">
             {loadingAuth ? 'Carregando...' : 'Cadastrar'}
           </Styled.InputButton>

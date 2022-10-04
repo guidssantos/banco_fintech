@@ -43,4 +43,8 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     overflow-y: auto;
   }
+
+  button{
+    border: 0;
+  }
 `;

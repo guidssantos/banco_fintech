@@ -8,6 +8,7 @@ ${({ theme }) => css`
 	animation: gradient 10s ease infinite;
   h1{
     font-weight: 800;
+    text-transform: uppercase;
   }
 
 @keyframes gradient {
@@ -42,7 +43,6 @@ padding-top: ${theme.spacings.large};
 
 export const SectionFinance = styled.section`
 ${({ theme }) => css`
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;

@@ -4,7 +4,6 @@ import * as Styled from './styles';
 import Button from 'react-bootstrap/Button';
 import cartao from '../../assets/images/cartao.svg';
 import { SidebarDashboard } from '../../components/SidebarDashboard';
-import { DiReact } from 'react-icons/all';
 import person1 from '../../assets/images/person1.jfif';
 import person2 from '../../assets/images/person2.jfif';
 import person3 from '../../assets/images/person3.jfif';
@@ -17,7 +16,6 @@ export const Dashboard = () => {
       <SectionContainer>
         <Styled.Wrapper>
           <Heading>Dashboard</Heading>
-
           <Styled.SectionFinance>
             <Styled.FinanceWrapper>
               <Styled.FinanceOne>
@@ -75,7 +73,7 @@ export const Dashboard = () => {
                   <Styled.TransactionTr>
                     <Styled.TransactionTd>
                       <div>
-                        <h4>John Deo</h4>
+                        <h4>Kelvin Pereira</h4>
                       </div>
                     </Styled.TransactionTd>
                     <Styled.TransactionTd>Food</Styled.TransactionTd>
@@ -85,7 +83,7 @@ export const Dashboard = () => {
                   <Styled.TransactionTr>
                     <Styled.TransactionTd>
                       <div>
-                        <h4>John Deo</h4>
+                        <h4>Marcelo Henrique</h4>
                       </div>
                     </Styled.TransactionTd>
                     <Styled.TransactionTd>Food</Styled.TransactionTd>

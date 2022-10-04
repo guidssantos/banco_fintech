@@ -34,17 +34,17 @@ ${({ theme }) => css`
 `;
 
 export const FormWrapper = styled.form`
-${() => css`
+${({ theme }) => css`
   display: flex;
   flex-direction: column;
   align-items: center;
   background: rgba(255,255,255, 0.9);
-  border-radius: 15px;
-  padding: 5% 0;
+  border-radius: ${theme.spacings.small};
+  padding: ${theme.spacings.medium} 0;
 
   img {
-    margin-bottom: 20px;
-    border-radius: 15px
+    margin-bottom: ${theme.spacings.small};
+    border-radius: ${theme.spacings.xsmall}
   };
 
 
@@ -56,7 +56,6 @@ ${({ theme }) => css`
   padding: ${theme.spacings.small};
   margin-bottom: ${theme.spacings.small};
   background: #FEFEFE;
-  z-index: 2;
   width: 70%;
   border-radius: 5px;
   border: 0;
@@ -70,30 +69,20 @@ ${({ theme }) => css`
 
 export const InputButton = styled.button`
 ${({ theme }) => css`
-  padding: ${theme.spacings.small};
+  padding: 1.4rem 8rem;
+  margin-top: ${theme.spacings.xsmall};
   background: ${theme.colors.secondary};
-  z-index: 2;
-  width: 25%;
   border-radius: 5px;
   border: 0;
   color: white;
-  cursor: pointer;
-
-  @media ${theme.media.lteMedium}{
-  padding: ${theme.spacings.small} 80px;
-  display: flex;
-  justify-content: center;
-  }
 `}
 `;
 
 export const LabelOne = styled.label`
 ${({ theme }) => css`
-z-index: 2;
 color: ${theme.colors.secondary};
 font-size: ${theme.font.sizes.large};
 font-weight: 600;
-padding-bottom: ${theme.spacings.small};
 
 @media ${theme.media.lteSmall}{
 font-size: ${theme.font.sizes.medium};
@@ -101,31 +90,22 @@ font-size: ${theme.font.sizes.medium};
 `}
 `;
 
-export const WrapperCheck = styled.div`
+export const LoginWrapper = styled.div`
 ${({ theme }) => css`
-display: flex;
-justify-content: center;
-width: 100%;
-z-index: 2;
-padding-bottom: 50px;
+padding-bottom: ${theme.spacings.small};
 
-    span:first-child{
-      margin-right: 15%;
-    }
-
-    a, span{
-      color:  ${theme.colors.secondary};
-    }
-
-@media ${theme.media.lteSmall}{
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  padding-bottom: 20px;
-
-  span:first-child{
-    margin-right: 0;
-  }
+span{
+  color: ${theme.colors.secondary};
 }
+
+a{
+  color: #53B3CB;
+  transition: all ease-in-out 300ms;
+}
+
+a:hover{
+  color: #78D6ED;
+}
+
 `}
 `;

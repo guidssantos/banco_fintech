@@ -4,6 +4,7 @@ import { Login } from './Login';
 import Base from '../pages/Base';
 import RouteWrapper from './Route';
 import { Register } from './Register';
+import { Settings } from './Settings';
 
 export default function AllRoutes() {
   return (
@@ -32,6 +33,16 @@ export default function AllRoutes() {
         element={
           <RouteWrapper
             loggedComponent={<Dashboard />}
+            defaultComponent={<Login />}
+            isPrivate
+          />
+        }
+      />
+      <Route
+        path="/login/dashboard/settings"
+        element={
+          <RouteWrapper
+            loggedComponent={<Settings />}
             defaultComponent={<Login />}
             isPrivate
           />

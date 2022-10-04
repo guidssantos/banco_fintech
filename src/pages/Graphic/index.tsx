@@ -15,7 +15,7 @@ export const Graphic = () => {
           This mix makes it possible for our team to deliver the best results to
           all our clients.
         </TextComponent>
-        <img src={grapich} />
+        <Styled.ImgWrapper><img src={grapich} /></Styled.ImgWrapper>
       </Styled.Wrapper>
     </SectionContainer>
   );

@@ -1,14 +1,10 @@
 import styled, { css } from 'styled-components';
 export const Wrapper = styled.div`
 ${({ theme }) => css`
-padding-top: ${theme.spacings.small};
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  img{
-    width: 50%;
-  }
+  padding-top: ${theme.spacings.xhuge};
 
   h1{
     text-align: center;
@@ -50,3 +46,11 @@ padding-top: ${theme.spacings.small};
 
 `}
 `;
+
+export const ImgWrapper = styled.div`
+
+img{
+  width: 500px;
+}
+`
+

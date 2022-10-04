@@ -58,7 +58,7 @@ export function SidebarDashboard() {
                 {/* <a href="/" title="Notificações">
                   <IoNotificationsSharp />
                 </a> */}
-                <Link to="" title="Configuration">
+                <Link to="/login/dashboard/settings" title="Configuration">
                   <MdSettings />
                 </Link>
                 <a onClick={() => logout()} title="Logout">
@@ -108,7 +108,7 @@ export function SidebarDashboard() {
                     <IoNotificationsSharp />
                     <p>Notificações</p>
                   </a> */}
-                  <Link to="">
+                  <Link to="/login/dashboard/settings">
                     <MdSettings />
                     <p>Configuration</p>
                   </Link>

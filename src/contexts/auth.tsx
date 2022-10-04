@@ -12,8 +12,8 @@ type LoginProps = {
 type AuthContextProps = {
   logout(): Promise<void>;
   signed: boolean;
-  user: null;
   loading: boolean;
+  user: null;
   login(email, password): Promise<void>;
   register(name, email, password): Promise<void>;
   loadingAuth: boolean;
@@ -34,7 +34,6 @@ function AuthProvider({ children }: LoginProps) {
         setUser(JSON.parse(storageUser));
         setLoading(false);
       }
-
       setLoading(false);
     }
 

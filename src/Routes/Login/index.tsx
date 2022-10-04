@@ -24,6 +24,10 @@ export const Login = () => {
         <Styled.FormWrapper onSubmit={handleSubmit}>
           <img src={logo} />
           <Styled.LabelOne>FAÇA SEU LOGIN</Styled.LabelOne>
+          <Styled.RegisterWrapper>
+            <span>Não é um membro? </span>
+            <Link to="/register">Ir para cadastro</Link>
+          </Styled.RegisterWrapper>
           <Styled.InputOne
             type="text"
             name="e-mail"
@@ -38,9 +42,6 @@ export const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Styled.WrapperCheck>
-            <Link to="/register">Registrar</Link>
-          </Styled.WrapperCheck>
           <Styled.InputButton type="submit">
             {loadingAuth ? 'Carregando...' : 'Acessar'}
           </Styled.InputButton>

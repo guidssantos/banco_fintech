@@ -24,7 +24,7 @@ export const Title = styled.h2`
     text-align: center;
     font-size: ${theme.font.sizes.medium};
     font-weight: 500;
-    padding-bottom: ${theme.spacings.huge};
+    padding-bottom: ${theme.spacings.large};
   `}
 `;
 
